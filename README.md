@@ -11,5 +11,5 @@
 -------------
 
 > - lesson01 [配置 node-gyp 环境](https://github.com/cTaoLee/electronAddons/tree/master/lesson01)
-> - lesson01 [配置 node-gyp 环境](https://github.com/cTaoLee/electronAddons/tree/master/lesson02)
+> - lesson02 [node-gyp 编译流程](https://github.com/cTaoLee/electronAddons/tree/master/lesson02)
 > - lesson01 [配置 node-gyp 环境](aa)
