@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "callback",
+      "target_name": "addon",
       "sources": [ "test.cc" ]
     }
   ]

@@ -10,6 +10,6 @@
 目录
 -------------
 
-> - lesson01 [配置 node-gyp 环境](aa)
-> - lesson01 [配置 node-gyp 环境](aa)
+> - lesson01 [配置 node-gyp 环境](https://github.com/cTaoLee/electronAddons/tree/master/lesson01)
+> - lesson01 [配置 node-gyp 环境](https://github.com/cTaoLee/electronAddons/tree/master/lesson02)
 > - lesson01 [配置 node-gyp 环境](aa)
