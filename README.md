@@ -12,3 +12,4 @@
 > - lesson01 [配置 node-gyp 环境](https://github.com/cTaoLee/electronAddons/tree/master/lesson01)
 > - lesson02 [node-gyp 编译流程](https://github.com/cTaoLee/electronAddons/tree/master/lesson02)
 > - lesson03 [带回调函数](https://github.com/cTaoLee/electronAddons/tree/master/lesson03)
+> - lesson04 [返回对象](https://github.com/cTaoLee/electronAddons/tree/master/lesson04)
