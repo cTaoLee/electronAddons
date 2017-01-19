@@ -1,6 +1,6 @@
 lesson02：node-gyp 编译流程
 ===================
-
+> - 注意：本例运行环境为 node(v6.9.2)，更早版本或更新版本代码可能有所不同。
 
 ## set 1
 
@@ -19,7 +19,7 @@ lesson02：node-gyp 编译流程
 
 ```
 ##set 2
-新建一个要编译的文件**test.cc**(.cc是linux下的c++文件格式)
+新建一个要编译的文件**test.cc** (.cc是linux下的c++文件格式)
 
 ```cc
 // test.cc
@@ -44,15 +44,15 @@ namespace demo {
 
 
 	// 初始化输出模块函数
-	void init(Local<Object> exports) {
-		// 设置输出模块的一个方法 等同 module.exports.fun = Method;
-	  NODE_SET_METHOD(exports, "fun", Method);
+	void init(Local<Object> exports) { // 载入模块的exports对象
+		// 为输出模块的exports对象设置一个方法 等同 exports.fun = Method;
+	  	NODE_SET_METHOD(exports, "fun", Method);
 	}
 
 	// 输出模块
 	NODE_MODULE(addon, init)
 
-} 
+}   // namespace demo
 
 ```
 ##set 3
