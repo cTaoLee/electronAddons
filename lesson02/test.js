@@ -1,5 +1,3 @@
-var addon = require('./build/Release/callback');
+var addon = require('./build/Release/addon');
 
-addon(function(msg){
-  console.log(msg); // 'hello world'
-});
+console.log(addon.fun());

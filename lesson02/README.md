@@ -1,5 +1,30 @@
+lesson02：node-gyp 编译流程
+===================
+
+
+## set 1
+
+`npm init` 新建一个项目，并建一个node-gyp的配置文件 **binding.gyp** （一定要叫这个名字）
+
+```gyp
+// binding.gyp
+{
+  "targets": [
+    {
+      "target_name": "addon",
+      "sources": [ "test.cc" ]
+    }
+  ]
+}
+
+```
+##set 2
+新建一个要编译的文件**test.cc**(.cc是linux下的c++文件格式)
+
+```cc
+// test.cc
 #include <node.h>	// 使用尖括号表示在包含文件目录中去查找(包含目录是由用户在设置环境时设置的)
-									// 使用双引号则表示首先在当前的源文件目录中查找，若未找到才到包含目录中去查找
+					// 使用双引号则表示首先在当前的源文件目录中查找，若未找到才到包含目录中去查找
 
 namespace demo {
 
@@ -28,3 +53,17 @@ namespace demo {
 	NODE_MODULE(addon, init)
 
 } 
+
+```
+##set 3
+编译 `node-gyp configure build`
+##set 4
+新建一个js文件**test.js**，用来调用我们编译好的模块
+```js
+// test.js
+var addon = require('./build/Release/addon');
+
+console.log(addon.fun());
+```
+##set 5
+执行 `node index`
