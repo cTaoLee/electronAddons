@@ -17,3 +17,4 @@ git运行`git clone https://github.com/cTaoLee/electronAddons.git`
 - lesson03 [带回调函数](https://github.com/cTaoLee/electronAddons/tree/master/lesson03)
 - lesson04 [返回对象1](https://github.com/cTaoLee/electronAddons/tree/master/lesson04)
 - lesson05 [返回对象2](https://github.com/cTaoLee/electronAddons/tree/master/lesson05)
+- lesson05 [自己写声明文件](https://github.com/cTaoLee/electronAddons/tree/master/lesson06)

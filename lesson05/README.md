@@ -27,7 +27,7 @@ void Method(const FunctionCallbackInfo<Value>& args) {
 
   // FunctionTemplate/ObjectTemplate可以理解为JS function和C++ 函数之间的binding
   // 相当于 js 中的 function 和 object
-  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, MyFunction);
+  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, MyFunction);// 生成v8函数模板
   Local<Function> fn = tpl->GetFunction();
 
   // 假如没有这一步，会使函数匿名
@@ -42,7 +42,6 @@ void Init(Local<Object> exports, Local<Object> module) {
 NODE_MODULE(addon, Init)
 
 }  // namespace demo
-
 
 ```
 
