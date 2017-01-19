@@ -1,8 +1,8 @@
 lesson02：node-gyp 编译流程
 ===================
-> - 注意：本例运行环境为 node(v6.9.2)，更早版本或更新版本代码可能有所不同。
+> 注意：本例运行环境为 node(v6.9.2)，更早版本或更新版本代码可能有所不同。
 
-## set 1
+##step 1
 
 `npm init` 新建一个项目，并建一个node-gyp的配置文件 **binding.gyp** （一定要叫这个名字）
 
@@ -18,7 +18,7 @@ lesson02：node-gyp 编译流程
 }
 
 ```
-##set 2
+##step 2
 新建一个要编译的文件**test.cc** (.cc是linux下的c++文件格式)
 
 ```cc
@@ -55,9 +55,9 @@ namespace demo {
 }   // namespace demo
 
 ```
-##set 3
+##step 3
 编译 `node-gyp configure build`
-##set 4
+##step 4
 新建一个js文件**test.js**，用来调用我们编译好的模块
 ```js
 // test.js
@@ -65,5 +65,5 @@ var addon = require('./build/Release/addon');
 
 console.log(addon.fun());
 ```
-##set 5
+##step 5
 执行 `node index`
