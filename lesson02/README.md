@@ -66,4 +66,4 @@ var addon = require('./build/Release/addon');
 console.log(addon.fun());
 ```
 ##step 5
-执行 `node index`
+执行 `node test`
